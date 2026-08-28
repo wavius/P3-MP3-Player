@@ -1,0 +1,33 @@
+# Notes
+.obsidian/
+Private Notes/
+
+# Altium files
+History/
+__Previews/
+__ProjectOutputs/
+ProjectOutputs*/
+Project Logs*/
+*.zip
+*.PcbDoc.htm
+*.SchDoc.htm
+
+# STM32CubeIDE / Eclipse build artifacts
+.metadata/
+Debug/
+Release/
+cubemx/
+*.o
+*.bin
+*.hex
+*.map
+*.lst
+*.su
+*.obj
+*.d
+*.size
+*.bak
+*.log
+*.tmp
+*.dep
+.settings/org.eclipse.*
