@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "P3 MP3 Player — System Architecture",
+    "output": "p3-mp3-player-architecture.html",
+    "quality_profile": "standard"
+  },
+  "components": [
+    { "id": "usb-c", "type": "external", "label": "USB-C", "sublabel": "5V power + data", "pos": [40, 60], "size": [120, 50] },
+    { "id": "charger", "type": "backend", "label": "BQ24040", "sublabel": "LiPo charger", "pos": [40, 200], "size": [120, 50] },
+    { "id": "battery", "type": "external", "label": "702050 LiPo", "sublabel": "3.0-4.2V", "pos": [40, 340], "size": [120, 50] },
+    { "id": "buck", "type": "backend", "label": "TPS63050", "sublabel": "buck-boost @3.45V", "pos": [220, 200], "size": [120, 50] },
+    { "id": "mcu", "type": "backend", "label": "STM32C551", "sublabel": "MCU - Helix decode", "pos": [400, 340], "size": [120, 50] },
+    { "id": "dac", "type": "backend", "label": "DAC", "sublabel": "TBD", "pos": [560, 340], "size": [120, 50] },
+    { "id": "amp", "type": "backend", "label": "Headphone amp", "sublabel": "TBD", "pos": [720, 340], "size": [120, 50] },
+    { "id": "headphones", "type": "external", "label": "Headphones", "sublabel": "3.5mm jack", "pos": [880, 340], "size": [120, 50] },
+    { "id": "ldo", "type": "backend", "label": "LP5907", "sublabel": "LDO @3.3V + ferrite", "pos": [560, 200], "size": [120, 50] },
+    { "id": "sd", "type": "database", "label": "Storage", "sublabel": "TBD - microSD SPI", "pos": [400, 480], "size": [120, 50] },
+    { "id": "input", "type": "external", "label": "Input", "sublabel": "TBD - jog, buttons", "pos": [220, 480], "size": [120, 50] },
+    { "id": "display", "type": "frontend", "label": "Display", "sublabel": "TBD - OLED I2C", "pos": [560, 480], "size": [120, 50] }
+  ],
+  "connections": [
+    { "id": "usb-to-charger", "from": "usb-c", "to": "charger", "label": "VBUS", "labelAt": [100, 124] },
+    { "id": "charger-to-battery", "from": "charger", "to": "battery", "label": "charge", "labelAt": [100, 264] },
+    { "id": "battery-to-buck", "from": "battery", "to": "buck", "label": "discharge", "labelAt": [160, 300] },
+    { "id": "buck-to-mcu", "from": "buck", "to": "mcu", "label": "3.45V", "labelAt": [320, 300] },
+    { "id": "buck-to-ldo", "from": "buck", "to": "ldo", "label": "3.45V", "labelAt": [400, 180] },
+    { "id": "ldo-to-dac", "from": "ldo", "to": "dac", "label": "3.3V", "labelAt": [560, 290] },
+    { "id": "ldo-to-amp", "from": "ldo", "to": "amp", "label": "3.3V", "labelAt": [700, 260] },
+    { "id": "sd-to-mcu", "from": "sd", "to": "mcu", "label": "SPI", "labelAt": [460, 430] },
+    { "id": "mcu-to-dac", "from": "mcu", "to": "dac", "label": "I2S", "variant": "emphasis", "labelAt": [500, 320] },
+    { "id": "dac-to-amp", "from": "dac", "to": "amp", "label": "analog", "variant": "emphasis", "labelAt": [700, 400] },
+    { "id": "amp-to-headphones", "from": "amp", "to": "headphones", "label": "audio out", "variant": "emphasis", "labelAt": [800, 320] },
+    { "id": "input-to-mcu", "from": "input", "to": "mcu", "label": "GPIO", "labelAt": [320, 430] },
+    { "id": "mcu-to-display", "from": "mcu", "to": "display", "label": "I2C", "labelAt": [500, 430] }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "Power", "items": ["USB-C to BQ24040 to LiPo cell", "TPS63050 buck-boost @3.45V digital rail", "LP5907 LDO + ferrite bead @3.3V analog rail", "USBLC6-2 ESD protection at connector"] },
+    { "dot": "emerald", "title": "Audio path", "items": ["Storage (TBD) to STM32C551 (Helix MP3 decode)", "I2S to DAC (TBD) to headphone amp (TBD) to 3.5mm jack", "AGND audio island star-tied to DGND at battery ground"] },
+    { "dot": "rose", "title": "Control", "items": ["Input (TBD - jog, buttons) to MCU GPIO", "Display (TBD - OLED, I2C)", "BQ24040 STAT + battery voltage sense to MCU"] }
+  ]
+}

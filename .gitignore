@@ -31,3 +31,7 @@ cubemx/
 *.tmp
 *.dep
 .settings/org.eclipse.*
+
+# Opencode
+.opencode/*
+!.opencode/opencode.json
