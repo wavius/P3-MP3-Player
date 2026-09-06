@@ -1,4 +1,5 @@
 Record=TopLevelDocument|FileName=01_Top_Level.SchDoc|SheetNumber=1
 Record=SheetSymbol|SourceDocument=01_Top_Level.SchDoc|Designator=Audio|SchDesignator=Audio|FileName=04_Audio.SchDoc|SheetNumber=4|SymbolType=Normal|RawFileName=04_Audio.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=01_Top_Level.SchDoc|Designator=Display|SchDesignator=Display|FileName=05_Display.SchDoc|SheetNumber=5|SymbolType=Normal|RawFileName=05_Display.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=01_Top_Level.SchDoc|Designator=MCU|SchDesignator=MCU|FileName=03_MCU.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=03_MCU.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=01_Top_Level.SchDoc|Designator=Power|SchDesignator=Power|FileName=02_Power.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=02_Power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
