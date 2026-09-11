@@ -57,109 +57,109 @@
       "id": "MCO1_Clock_Source",
       "value": "System_Clock_Frequency_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "MCO1_div_Clock",
       "value": 1,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "MCO1_Input_Source",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "MCO2_Clock_Source",
       "value": "System_Clock_Frequency_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "MCO2_div_Clock",
       "value": 1,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "MCO2_Input_Source",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "I2C2_Clock_Source",
       "value": "PSIK_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 100000000
     },
     {
       "id": "I2C2_Input_Clock",
-      "value": 144000000,
+      "value": 100000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 100000000
     },
     {
       "id": "I3C1_Clock_Source",
       "value": "APB1_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "I3C1_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "DAC1SH_Clock_Source",
-      "value": "LSE_inputid",
+      "value": "LSI_inputid",
       "isLocked": false,
-      "outFrequency": 32768
+      "outFrequency": 32000
     },
     {
       "id": "DAC1SH_Input_Clock",
-      "value": 32768,
+      "value": 32000,
       "isLocked": false,
-      "outFrequency": 32768
+      "outFrequency": 32000
     },
     {
       "id": "SPI1_Clock_Source",
       "value": "APB2_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "SPI2_Clock_Source",
       "value": "APB1_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "SPI3_Clock_Source",
       "value": "APB1_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "SPI1_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "SPI2_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "SPI3_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "LSCO_Clock_Source",
@@ -187,63 +187,63 @@
     },
     {
       "id": "System_Clock_Source",
-      "value": "PSI_inputid",
+      "value": "HSI_DIV_3_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "System_Clock_Frequency",
-      "value": "144000000",
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "PWR_Input_Clock",
-      "value": "144000000",
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "AHB_Clock_Divider",
       "value": 1,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "HCLK_Frequency",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "AHB_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "LPTIM1_Clock_Source",
       "value": "APB3_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "LPTIM1_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "LPUART_Clock_Source",
       "value": "APB3_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "LPUART_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "CRS_Input_Clock",
@@ -255,55 +255,55 @@
       "id": "Cortex_Divider",
       "value": 8,
       "isLocked": false,
-      "outFrequency": 18000000
+      "outFrequency": 6000000
     },
     {
       "id": "Cortex_System_Timer",
-      "value": 18000000,
+      "value": 6000000,
       "isLocked": false,
-      "outFrequency": 18000000
+      "outFrequency": 6000000
     },
     {
       "id": "FCLK_Cortex",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "APB1_Clock_Divider",
       "value": 1,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "APB2_Clock_Divider",
       "value": 1,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "APB3_Clock_Divider",
       "value": 1,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "APB1_Peripheral_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "APB2_Peripheral_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "APB3_Peripheral_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "USBFS_Input_Clock",
@@ -319,105 +319,105 @@
     },
     {
       "id": "TIMx_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "TIMx2_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "ADC_DAC_Clock_Source",
       "value": "PSI_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 100000000
     },
     {
       "id": "ADC_Input_Clock",
-      "value": 36000000,
+      "value": 25000000,
       "isLocked": false,
-      "outFrequency": 36000000
+      "outFrequency": 25000000
     },
     {
       "id": "DAC1_Input_Clock",
-      "value": 36000000,
+      "value": 25000000,
       "isLocked": false,
-      "outFrequency": 36000000
+      "outFrequency": 25000000
     },
     {
       "id": "I2C1_Clock_Source",
       "value": "APB1_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "I2C1_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "USART1_Clock_Source",
       "value": "APB2_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "USART1_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "USART2_Clock_Source",
       "value": "APB1_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "USART2_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "USART3_Clock_Source",
       "value": "APB1_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "USART3_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "UART4_Clock_Source",
       "value": "APB1_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "UART4_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "UART5_Clock_Source",
       "value": "APB1_Peripheral_Clock_inputid",
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "UART5_Input_Clock",
-      "value": 144000000,
+      "value": 48000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 48000000
     },
     {
       "id": "PSI_Clock_Mux",
@@ -433,39 +433,27 @@
     },
     {
       "id": "PSI",
-      "value": "144000000",
+      "value": 100000000,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 100000000
     },
     {
       "id": "PSI_DIV_3",
       "value": 3,
       "isLocked": false,
-      "outFrequency": 48000000
+      "outFrequency": 33333333.333333332
     },
     {
       "id": "PSIK",
       "value": 1,
       "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 100000000
     },
     {
       "id": "Cortex_Clock_Mux",
       "value": "Cortex_Divider_inputid",
       "isLocked": false,
-      "outFrequency": 18000000
-    },
-    {
-      "id": "FDCAN_Clock_Source",
-      "value": "APB1_Peripheral_Clock_inputid",
-      "isLocked": false,
-      "outFrequency": 144000000
-    },
-    {
-      "id": "FDCAN1_Input_Clock",
-      "value": 144000000,
-      "isLocked": false,
-      "outFrequency": 144000000
+      "outFrequency": 6000000
     },
     {
       "id": "AUDIO_Source",
@@ -477,7 +465,7 @@
       "id": "ADCDACPRE_DIV",
       "value": 4,
       "isLocked": false,
-      "outFrequency": 36000000
+      "outFrequency": 25000000
     },
     {
       "id": "USB_RNG_Clock_Source",
@@ -536,6 +524,11 @@
       "name": "HAL_SYSTEM_CORE_EXTI_CALLBACK_USER_DATA",
       "value": false,
       "originator": "556db68c-8974-4b5e-8151-3f0dd4dc1905"
+    },
+    "HAL_GPIO_PROJECT_USE_HAL": {
+      "name": "HAL_GPIO_PROJECT_USE_HAL",
+      "value": 1,
+      "originator": "sw-config-semaphore"
     }
   }
 }"""
@@ -616,17 +609,437 @@
 {
   "version": 10,
   "pinout-configuration": {
-    "userConfigurations": [],
+    "userConfigurations": [
+      {
+        "pin": {
+          "name": "PA12",
+          "position": "33",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f",
+            "u"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 12,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "USB",
+          "name": "USB_DP",
+          "type": "additional"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PA11",
+          "position": "32",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f",
+            "u"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 11,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "USB",
+          "name": "USB_DM",
+          "type": "additional"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB7",
+          "position": "43",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 7,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "I2C1",
+          "name": "I2C1_SDA",
+          "type": "alternate",
+          "alternateFunctionId": "AF4"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB6",
+          "position": "42",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 6,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "I2C1",
+          "name": "I2C1_SCL",
+          "type": "alternate",
+          "alternateFunctionId": "AF4"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB5",
+          "position": "41",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 5,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "GPIOB",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PA15(JTDI)",
+          "position": "38",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 15,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "GPIOA",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PA14(JTCK/SWCLK)",
+          "position": "37",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 14,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "GPIOA",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB14",
+          "position": "27",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 14,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "SPI2",
+          "name": "SPI2_MISO",
+          "type": "alternate",
+          "alternateFunctionId": "AF5"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB15",
+          "position": "28",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 15,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "SPI2",
+          "name": "SPI2_MOSI",
+          "type": "alternate",
+          "alternateFunctionId": "AF5"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB13",
+          "position": "26",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 13,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "SPI2",
+          "name": "SPI2_SCK",
+          "type": "alternate",
+          "alternateFunctionId": "AF5"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB12",
+          "position": "25",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 12,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "GPIOB",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PA8",
+          "position": "29",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 8,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "GPIOA",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PH0-OSC_IN(PH0)",
+          "position": "5",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 0,
+          "port": "H"
+        },
+        "signal": {
+          "instance": "RCC",
+          "name": "RCC_OSC_IN",
+          "type": "additional"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PH1-OSC_OUT(PH1)",
+          "position": "6",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 1,
+          "port": "H"
+        },
+        "signal": {
+          "instance": "RCC",
+          "name": "RCC_OSC_OUT",
+          "type": "additional"
+        },
+        "pinned": true
+      }
+    ],
     "needConfigurations": []
   },
-  "pinout-excluded-pins": [],
-  "pinout-labels": [],
-  "pinout-gpio-assignations": [],
+  "pinout-excluded-pins": [
+    "46"
+  ],
+  "pinout-labels": [
+    {
+      "position": "42",
+      "labels": [
+        "DISPLAY_SCL"
+      ]
+    },
+    {
+      "position": "43",
+      "labels": [
+        "DISPLAY_SDA"
+      ]
+    },
+    {
+      "position": "41",
+      "labels": [
+        "DISPLAY_NRES"
+      ]
+    },
+    {
+      "position": "37",
+      "labels": [
+        "CHARGER_NCHG"
+      ]
+    },
+    {
+      "position": "38",
+      "labels": [
+        "CHARGER_NPG"
+      ]
+    },
+    {
+      "position": "28",
+      "labels": [
+        "SD_MOSI"
+      ]
+    },
+    {
+      "position": "27",
+      "labels": [
+        "SD_MISO"
+      ]
+    },
+    {
+      "position": "26",
+      "labels": [
+        "SD_SCK"
+      ]
+    },
+    {
+      "position": "25",
+      "labels": [
+        "SD_CS"
+      ]
+    },
+    {
+      "position": "29",
+      "labels": [
+        "SD_CD"
+      ]
+    }
+  ],
+  "pinout-gpio-assignations": [
+    {
+      "gpioGroupId": "default_gpio_group_id",
+      "softwareProjectId": "221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
+      "swInstanceId": "71284067-b349-4523-bf6d-afe299600a67",
+      "instanceName": "GPIO"
+    }
+  ],
   "pinout-gpio-groups": [
     {
       "id": "default_gpio_group_id",
       "name": "gpio_default",
-      "pins": []
+      "pins": [
+        {
+          "name": "PB5",
+          "position": "41",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 5,
+          "port": "B"
+        },
+        {
+          "name": "PA15(JTDI)",
+          "position": "38",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 15,
+          "port": "A"
+        },
+        {
+          "name": "PA14(JTCK/SWCLK)",
+          "position": "37",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 14,
+          "port": "A"
+        },
+        {
+          "name": "PB12",
+          "position": "25",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 12,
+          "port": "B"
+        },
+        {
+          "name": "PA8",
+          "position": "29",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 8,
+          "port": "A"
+        }
+      ]
     }
   ],
   "pinout-gpio-needs": [],
@@ -859,6 +1272,14 @@ solution:
         "label": "Startup",
         "expanded": true,
         "userAdded": false
+      },
+      {
+        "$type": "http://st.com/schema/sw-composer#//MultiInstanceSWComponent",
+        "id": "53902f64-35cd-405c-8698-95c01f61ed81",
+        "componentDescriptionId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:GPIO@2.1.0#HAL GPIO Init",
+        "label": "STM32CubeMX2 Config:GPIO",
+        "expanded": true,
+        "userAdded": true
       }
     ]
   },
@@ -1057,14 +1478,16 @@ solution:
                 "use_hal_aes_ctr_algo": false,
                 "use_hal_aes_dma": false,
                 "use_hal_aes_ecb_cbc_algo": false,
-                "use_hal_aes_gcm_gmac_algo": false
+                "use_hal_aes_gcm_gmac_algo": false,
+                "use_hal_aes_rng_recovery": true
               },
               "ccb_feature": {
                 "use_register_callback": false,
                 "user_data": false,
                 "get_last_errors": false,
                 "rng_recovery": true,
-                "clk_enable_model": "HAL_CLK_ENABLE_NO"
+                "clk_enable_model": "HAL_CLK_ENABLE_NO",
+                "use_hal_ccb_rng_recovery": true
               },
               "comp_feature": {
                 "use_register_callback": false,
@@ -1208,7 +1631,8 @@ solution:
                 "user_data": false,
                 "get_last_errors": false,
                 "rng_recovery": true,
-                "clk_enable_model": "HAL_CLK_ENABLE_NO"
+                "clk_enable_model": "HAL_CLK_ENABLE_NO",
+                "use_hal_pka_rng_recovery": true
               },
               "rng_feature": {
                 "use_register_callback": false,
@@ -1521,7 +1945,7 @@ solution:
                   "enable_css": false,
                   "startup_time": 5000
                 },
-                "system_clock_frequency": "144 MHz"
+                "system_clock_frequency": "48 MHz"
               },
               "additional": {
                 "hsi": {
@@ -1630,7 +2054,19 @@ solution:
                   "peripheral": "RCC"
                 }
               ],
-              "generated_function_calls": [],
+              "generated_function_calls": [
+                {
+                  "_foreignKey": "gpio_default",
+                  "_rank": 0,
+                  "callable": true,
+                  "generated": true,
+                  "hw_instance": "gpio_default",
+                  "layer": "HAL",
+                  "mode": "",
+                  "name": "mx_gpio_default_init",
+                  "peripheral": "GPIO"
+                }
+              ],
               "code_generation": {
                 "optim_enable": true,
                 "strategy": "HW",
@@ -1663,6 +2099,77 @@ solution:
                   "sysmem_usage_pattern": "Standalone"
                 }
               }
+            }
+          }
+        }
+      ],
+      "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:GPIO@2.1.0#HAL GPIO Init": [
+        {
+          "index": 7,
+          "instanceId": "71284067-b349-4523-bf6d-afe299600a67",
+          "entity": "gpio.groups",
+          "settings": {
+            "parameters": {
+              "info": {
+                "labels": [],
+                "layer": "HAL",
+                "init_type": "called"
+              },
+              "pins": [
+                {
+                  "_foreignKey": "PA8",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PA14(JTCK/SWCLK)",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "DOWN",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PA15(JTDI)",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "UP",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PB5",
+                  "basic": {
+                    "mode": "OUTPUT",
+                    "pull": "NO",
+                    "enable_exti": false,
+                    "output_active_state": "SET",
+                    "output_init_state": "RESET",
+                    "output_type": "PUSHPULL",
+                    "speed": "LOW"
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PB12",
+                  "basic": {
+                    "mode": "OUTPUT",
+                    "pull": "NO",
+                    "enable_exti": false,
+                    "output_active_state": "SET",
+                    "output_init_state": "RESET",
+                    "output_type": "PUSHPULL",
+                    "speed": "LOW"
+                  },
+                  "label_name": []
+                }
+              ]
             }
           }
         }
@@ -1922,6 +2429,7 @@ project:
     - component: STMicroelectronics::Device:STM32CubeMX2 Config:CORE@2.1.0
     - component: STMicroelectronics::Device:STM32CubeMX2 Config:CORTEX MPU@2.1.0
     - component: STMicroelectronics::Device:STM32CubeMX2 Config:CORTEX NVIC@2.1.0
+    - component: STMicroelectronics::Device:STM32CubeMX2 Config:GPIO@2.1.0
     - component: STMicroelectronics::Device:STM32CubeMX2 Config:ICACHE@2.1.0
     - component: STMicroelectronics::Device:STM32CubeMX2 Config:RCC@2.1.0
     - component: STMicroelectronics::Device:STM32CubeMX2 Config:System@2.1.0

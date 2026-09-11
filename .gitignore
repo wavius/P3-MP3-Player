@@ -32,6 +32,11 @@ cubemx/
 *.dep
 .settings/org.eclipse.*
 
+# Archify visual-check sidecars
+*.visual-check.html
+*.visual-check.json
+*.visual-check.*.png
+
 # Opencode
 .opencode/*
 !.opencode/opencode.json
