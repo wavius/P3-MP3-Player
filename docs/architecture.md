@@ -14,7 +14,7 @@ Battery-powered MP3 player modeled on the Sony Walkman NW-S203F (grown body ~110
 - DAC + headphone amp — TAD5112 (I2C/SPI, integrated HP driver)
 - Storage — microSD (SPI + FatFs)
 - Display — SSD1306 OLED (I2C)
-- Audio clock — 11.2896MHz crystal (I2S external clock)
+- Audio clock — 22.5792MHz MEMS oscillator, DSC6001 (I2S external clock)
 - Input — TBD (jog dial, buttons)
 
 Part list: `docs/components.md`
@@ -34,7 +34,7 @@ The buck-boost stays at 3.45V because the LP5907 needs ~150mV dropout headroom t
 
 ## Clocking
 - SYSCLK: HSI 144MHz (part has no PLL; only dividers downstream)
-- I2S: 11.2896MHz fundamental crystal feeds the external clock input, native 44.1kHz
+- I2S: 22.5792MHz MEMS oscillator (DSC6001, OE tied high) feeds the external clock input, native 44.1kHz family
 - TAD5112: on-chip PLL + auto sample-rate detection, I2S slave
 
 ## Boundaries

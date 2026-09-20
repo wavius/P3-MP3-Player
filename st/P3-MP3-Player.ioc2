@@ -19,9 +19,9 @@
     },
     {
       "id": "HSE",
-      "value": 8000000,
+      "value": "22579200",
       "isLocked": false,
-      "outFrequency": 8000000
+      "outFrequency": 22579200
     },
     {
       "id": "HSI",
@@ -33,7 +33,7 @@
       "id": "HSE_Divider_RTC",
       "value": 1,
       "isLocked": false,
-      "outFrequency": 8000000
+      "outFrequency": 22579200
     },
     {
       "id": "RTC_Clock_Source",
@@ -527,8 +527,18 @@
     },
     "HAL_GPIO_PROJECT_USE_HAL": {
       "name": "HAL_GPIO_PROJECT_USE_HAL",
-      "value": 1,
+      "value": 2,
       "originator": "sw-config-semaphore"
+    },
+    "RCC_PROJECT_HSE_STARTUP_TIME": {
+      "name": "RCC_PROJECT_HSE_STARTUP_TIME",
+      "value": 100,
+      "originator": "abca66f8-09d5-4866-9ba0-0b2ff018ef22"
+    },
+    "RCC_PROJECT_HSE": {
+      "name": "RCC_PROJECT_HSE",
+      "value": true,
+      "originator": "abca66f8-09d5-4866-9ba0-0b2ff018ef22"
     }
   }
 }"""
@@ -593,6 +603,13 @@
           "id": 9,
           "name": "SysTick",
           "priority": 15,
+          "subpriority": 0,
+          "used": true
+        },
+        {
+          "id": 1,
+          "name": "NMI",
+          "priority": -2,
           "subpriority": 0,
           "used": true
         }
@@ -859,6 +876,225 @@
       },
       {
         "pin": {
+          "name": "PA4",
+          "position": "14",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "TT",
+          "index": 4,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "SPI1",
+          "name": "I2S1_WS",
+          "type": "alternate",
+          "alternateFunctionId": "AF5"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PA5",
+          "position": "15",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 5,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "SPI1",
+          "name": "I2S1_CK",
+          "type": "alternate",
+          "alternateFunctionId": "AF5"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PA7",
+          "position": "17",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 7,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "SPI1",
+          "name": "I2S1_SDO",
+          "type": "alternate",
+          "alternateFunctionId": "AF5"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PA6",
+          "position": "16",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 6,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "SPI1",
+          "name": "I2S1_SDI",
+          "type": "alternate",
+          "alternateFunctionId": "AF5"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB3(JTDO/TRACESWO)",
+          "position": "39",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 3,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "I2C2",
+          "name": "I2C2_SCL",
+          "type": "alternate",
+          "alternateFunctionId": "AF9"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB4(NJTRST)",
+          "position": "40",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 4,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "I2C2",
+          "name": "I2C2_SDA",
+          "type": "alternate",
+          "alternateFunctionId": "AF9"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB0",
+          "position": "18",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 0,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "GPIOB",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB1",
+          "position": "19",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 1,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "GPIOB",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB2",
+          "position": "20",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 2,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "GPIOB",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PB10",
+          "position": "21",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 10,
+          "port": "B"
+        },
+        "signal": {
+          "instance": "GPIOB",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      }
+    ],
+    "needConfigurations": [
+      {
+        "id": "48de30ef-0151-4625-9fd5-bc49f2747dbf",
+        "pin": {
           "name": "PH0-OSC_IN(PH0)",
           "position": "5",
           "type": "gpio",
@@ -876,84 +1112,14 @@
           "name": "RCC_OSC_IN",
           "type": "additional"
         },
-        "pinned": true
-      },
-      {
-        "pin": {
-          "name": "PH1-OSC_OUT(PH1)",
-          "position": "6",
-          "type": "gpio",
-          "powerSource": "VDD",
-          "ioStructureOptions": [
-            "f"
-          ],
-          "ioType": "I/O",
-          "ioStructure": "FT",
-          "index": 1,
-          "port": "H"
-        },
-        "signal": {
-          "instance": "RCC",
-          "name": "RCC_OSC_OUT",
-          "type": "additional"
-        },
-        "pinned": true
+        "needId": "48de30ef-0151-4625-9fd5-bc49f2747dbf",
+        "pinned": true,
+        "ownedByUser": true
       }
-    ],
-    "needConfigurations": []
+    ]
   },
-  "pinout-excluded-pins": [
-    "46"
-  ],
+  "pinout-excluded-pins": [],
   "pinout-labels": [
-    {
-      "position": "42",
-      "labels": [
-        "DISPLAY_SCL"
-      ]
-    },
-    {
-      "position": "43",
-      "labels": [
-        "DISPLAY_SDA"
-      ]
-    },
-    {
-      "position": "41",
-      "labels": [
-        "DISPLAY_NRES"
-      ]
-    },
-    {
-      "position": "37",
-      "labels": [
-        "CHARGER_NCHG"
-      ]
-    },
-    {
-      "position": "38",
-      "labels": [
-        "CHARGER_NPG"
-      ]
-    },
-    {
-      "position": "28",
-      "labels": [
-        "SD_MOSI"
-      ]
-    },
-    {
-      "position": "27",
-      "labels": [
-        "SD_MISO"
-      ]
-    },
-    {
-      "position": "26",
-      "labels": [
-        "SD_SCK"
-      ]
-    },
     {
       "position": "25",
       "labels": [
@@ -964,6 +1130,120 @@
       "position": "29",
       "labels": [
         "SD_CD"
+      ]
+    },
+    {
+      "position": "43",
+      "labels": [
+        "DISP_I2C1_SDA"
+      ]
+    },
+    {
+      "position": "42",
+      "labels": [
+        "DISP_I2C1_SCL"
+      ]
+    },
+    {
+      "position": "41",
+      "labels": [
+        "DISP_NRES"
+      ]
+    },
+    {
+      "position": "40",
+      "labels": [
+        "DAC_I2C2_SDA"
+      ]
+    },
+    {
+      "position": "39",
+      "labels": [
+        "DAC_I2C2_SCL"
+      ]
+    },
+    {
+      "position": "38",
+      "labels": [
+        "CHGR_NPG"
+      ]
+    },
+    {
+      "position": "37",
+      "labels": [
+        "CHGR_NCHG"
+      ]
+    },
+    {
+      "position": "27",
+      "labels": [
+        "SD_SPI2_SDI"
+      ]
+    },
+    {
+      "position": "28",
+      "labels": [
+        "SD_SPI2_SDO"
+      ]
+    },
+    {
+      "position": "26",
+      "labels": [
+        "SD_SPI2_SCLK"
+      ]
+    },
+    {
+      "position": "21",
+      "labels": [
+        "DAC_GPIO1"
+      ]
+    },
+    {
+      "position": "19",
+      "labels": [
+        "DAC_GPO1"
+      ]
+    },
+    {
+      "position": "20",
+      "labels": [
+        "DAC_GPIO2"
+      ]
+    },
+    {
+      "position": "18",
+      "labels": [
+        "DAC_GPI1"
+      ]
+    },
+    {
+      "position": "17",
+      "labels": [
+        "DAC_I2S1_SDI"
+      ]
+    },
+    {
+      "position": "16",
+      "labels": [
+        "DAC_I2S1_SDO"
+      ]
+    },
+    {
+      "position": "15",
+      "labels": [
+        "DAC_I2S1_BCLK"
+      ]
+    },
+    {
+      "position": "14",
+      "labels": [
+        "DAC_I2S1_FSYNC"
+      ]
+    },
+    {
+      "position": "5",
+      "labels": [
+        "CLK_22_5792M"
       ]
     }
   ],
@@ -1038,11 +1318,73 @@
           "ioStructure": "FT",
           "index": 8,
           "port": "A"
+        },
+        {
+          "name": "PB0",
+          "position": "18",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 0,
+          "port": "B"
+        },
+        {
+          "name": "PB1",
+          "position": "19",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 1,
+          "port": "B"
+        },
+        {
+          "name": "PB2",
+          "position": "20",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 2,
+          "port": "B"
+        },
+        {
+          "name": "PB10",
+          "position": "21",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 10,
+          "port": "B"
         }
       ]
     }
   ],
-  "pinout-gpio-needs": [],
+  "pinout-gpio-needs": [
+    {
+      "id": "48de30ef-0151-4625-9fd5-bc49f2747dbf",
+      "needId": "48de30ef-0151-4625-9fd5-bc49f2747dbf",
+      "softwareProjectId": "221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
+      "componentInstanceId": "abca66f8-09d5-4866-9ba0-0b2ff018ef22",
+      "componentId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:RCC@2.1.0#HAL CORE Init GPIO and RCC",
+      "signal": "RCC_OSC_IN",
+      "instanceName": "RCC"
+    }
+  ],
   "pinout-user-settings": {}
 }"""
 "File: P3-MP3-Player.csolution.yml" = """
@@ -1935,7 +2277,7 @@ solution:
                 "flash_latency": 4,
                 "flash_programming_delay": 2,
                 "hse": {
-                  "state": "OFF",
+                  "state": "BYPASS_DIGITAL",
                   "enable_css": false,
                   "startup_time": 100
                 },
@@ -1964,7 +2306,26 @@ solution:
                 }
               },
               "system": {
-                "gpio": {},
+                "gpio": {
+                  "hse_in": {
+                    "needs": [
+                      {
+                        "needType": "need.pinout.signals",
+                        "projectUri": "cube:25169860-4b1c-4603-a337-0ac517b414b5/221b8ddd-b2b7-4a03-94c0-e5989cd20a84",
+                        "componentId": "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32CubeMX2 Config:RCC@2.1.0#HAL CORE Init GPIO and RCC",
+                        "componentInstanceId": "abca66f8-09d5-4866-9ba0-0b2ff018ef22",
+                        "selector": "OSC_IN",
+                        "id": "48de30ef-0151-4625-9fd5-bc49f2747dbf",
+                        "owner": "RCC",
+                        "constraints": {
+                          "mode": {
+                            "const": "ANALOG"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
                 "exti": {},
                 "nvic": {}
               }
@@ -2144,6 +2505,37 @@ solution:
                   "label_name": []
                 },
                 {
+                  "_foreignKey": "PB0",
+                  "basic": {
+                    "mode": "OUTPUT",
+                    "pull": "NO",
+                    "enable_exti": false,
+                    "output_active_state": "SET",
+                    "output_init_state": "RESET",
+                    "output_type": "PUSHPULL",
+                    "speed": "LOW"
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PB1",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PB2",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
                   "_foreignKey": "PB5",
                   "basic": {
                     "mode": "OUTPUT",
@@ -2153,6 +2545,15 @@ solution:
                     "output_init_state": "RESET",
                     "output_type": "PUSHPULL",
                     "speed": "LOW"
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PB10",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
                   },
                   "label_name": []
                 },
@@ -2171,6 +2572,18 @@ solution:
                 }
               ]
             }
+          }
+        }
+      ],
+      "STMicroelectronics.stm32c5xx_hal_drivers.2.1.0$STMicroelectronics::Device:STM32 LL:GPIO@2.1.0#LL": [
+        {
+          "index": 0,
+          "needId": "48de30ef-0151-4625-9fd5-bc49f2747dbf",
+          "rootId": "abca66f8-09d5-4866-9ba0-0b2ff018ef22",
+          "needType": "need.pinout.signals",
+          "parentId": "abca66f8-09d5-4866-9ba0-0b2ff018ef22",
+          "settings": {
+            "label_name": []
           }
         }
       ]

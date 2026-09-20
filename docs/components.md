@@ -13,14 +13,14 @@
 | DAC + headphone amp | TAD5112 (VQFN-24, DAC + HP driver, I2C/SPI) | ✓ |
 | Storage | microSD socket (10-pos push-push w/ CD, SPI + FatFs) | ✓ |
 | Display | SSD1306B OLED (I2C) | ✓ |
-| Audio clock | 11.2896MHz crystal (fundamental, I2S ext clock) | ✓ |
+| Audio clock | DSC6001JI2B-022.5792T (22.5792MHz MEMS XO, CMOS, OE tied high) | ✓ |
 | Input | TBD (jog dial, buttons, hold) | ✗ |
 
 ✓ = chosen, ✗ = not yet selected
 
 ## Decisions
 
-- **Audio clock / SYSCLK**: this MCU has no PLL (internal HSI is natively 144MHz; only dividers downstream). SYSCLK runs from HSI 144MHz. A 11.2896MHz fundamental crystal feeds the I2S external clock for audio-class accuracy, native 44.1kHz. No LSE (no RTC).
+- **Audio clock / SYSCLK**: this MCU has no PLL (internal HSI is natively 144MHz; only dividers downstream). SYSCLK runs from HSI 144MHz. A 22.5792MHz MEMS oscillator (DSC6001, 512×44.1kHz) feeds the I2S external clock for audio-class accuracy, native 44.1kHz family (48kHz family not exact). OE tied high = always enabled; the OE option can't power down the core, and the standby variant (DSC6011) is not stocked at this frequency. No LSE (no RTC).
 - **Power tree (three rails)**:
   - 3.45V digital (TPS63050 buck-boost): MCU, microSD, OLED VBAT
   - 3.3V analog (LP5907 #1 + ferrite): TAD5112 AVDD — clean rail for audio

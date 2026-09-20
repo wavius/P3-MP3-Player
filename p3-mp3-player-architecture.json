@@ -34,7 +34,7 @@
   ],
   "cards": [
     { "dot": "cyan", "title": "Power", "items": ["USB-C to BQ24040 to LiPo cell", "TPS63050 buck-boost @3.45V: MCU, microSD, OLED VBAT", "LP5907 #1 + ferrite @3.3V analog: TAD5112 AVDD", "LP5907 #2 @3.3V digital (DGND): SSD1306 VDD, TAD5112 IOVDD, I2C pull-ups", "PG/CHG open-drain pulled up to 3.45V digital rail"] },
-    { "dot": "emerald", "title": "Audio path", "items": ["microSD (SPI + FatFs) to STM32C551 (Helix decode)", "3-wire I2S + I2C control to TAD5112 (DAC + headphone amp)", "TAD5112 built-in digital volume; no separate amp or attenuator", "11.2896MHz crystal = I2S external clock, 44.1kHz native; SYSCLK = HSI 144MHz", "AGND audio island star-tied to DGND at battery ground"] },
+    { "dot": "emerald", "title": "Audio path", "items": ["microSD (SPI + FatFs) to STM32C551 (Helix decode)", "3-wire I2S + I2C control to TAD5112 (DAC + headphone amp)", "TAD5112 built-in digital volume; no separate amp or attenuator", "22.5792MHz MEMS oscillator (DSC6001) = I2S external clock, 44.1kHz native; SYSCLK = HSI 144MHz", "AGND audio island star-tied to DGND at battery ground"] },
     { "dot": "rose", "title": "Control", "items": ["Input (TBD - jog, buttons) to MCU GPIO", "SSD1306 OLED I2C + TAD5112 I2C on shared bus", "PG/CHG + battery voltage sense to MCU"] }
   ]
 }
