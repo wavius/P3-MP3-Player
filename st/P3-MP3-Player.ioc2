@@ -20,7 +20,7 @@
     {
       "id": "HSE",
       "value": "22579200",
-      "isLocked": false,
+      "isLocked": true,
       "outFrequency": 22579200
     },
     {
