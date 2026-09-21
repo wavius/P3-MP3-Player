@@ -4,23 +4,23 @@
 Battery-powered MP3 player modeled on the Sony Walkman NW-S203F (grown body ~110×24×20mm). USB-C charging, microSD storage, 3.5mm headphone out, OLED display, jog dial + buttons.
 
 ## Blocks
-- MCU — decode, I2S, USB, UI
+- MCU — STM32C552RET6 (decode, I2S, USB, UI)
 - Charger — USB 5V → LiPo
 - Battery — LiPo
 - Buck-boost — 3.45V digital rail
 - LDO + ferrite — 3.3V analog rail
 - LDO (2nd) — 3.3V digital rail
 - USB — USB-C + ESD
-- DAC + headphone amp — TAD5112 (I2C/SPI, integrated HP driver)
-- Storage — microSD (SPI + FatFs)
-- Display — SSD1306 OLED (I2C)
+- DAC + headphone amp — TAD5112 (I2S1 + I2C2, integrated HP driver)
+- Storage — microSD (SPI2 + FatFs)
+- Display — SSD1306 OLED (I2C1)
 - Audio clock — 22.5792MHz MEMS oscillator, DSC6001 (I2S external clock)
 - Input — TBD (jog dial, buttons)
 
 Part list: `docs/components.md`
 
 ## Data
-microSD → MCU (SPI + FatFs, Helix decode) → I2S (3-wire: BCK/LRCK/DATA) + I2C control → TAD5112 → 3.5mm jack → headphones
+microSD → MCU (SPI2 + FatFs, Helix decode) → I2S1 (3-wire: BCLK/FSYNC/DIN) + I2C2 control → TAD5112 → 3.5mm jack → headphones. Display on I2C1 (separate bus from the DAC).
 
 ## Power
 USB 5V → Charger → LiPo → Buck-boost (3.45V) → LDO (3.3V) → ferrite → audio
@@ -34,7 +34,7 @@ The buck-boost stays at 3.45V because the LP5907 needs ~150mV dropout headroom t
 
 ## Clocking
 - SYSCLK: HSI 144MHz (part has no PLL; only dividers downstream)
-- I2S: 22.5792MHz MEMS oscillator (DSC6001, OE tied high) feeds the external clock input, native 44.1kHz family
+- I2S: 22.5792MHz MEMS oscillator (DSC6001, OE tied high) feeds AUDIOCLK, selected as SPI1 kernel clock; native 44.1kHz family
 - TAD5112: on-chip PLL + auto sample-rate detection, I2S slave
 
 ## Boundaries

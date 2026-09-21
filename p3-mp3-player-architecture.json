@@ -11,13 +11,13 @@
     { "id": "charger", "type": "backend", "label": "BQ24040", "sublabel": "LiPo charger", "pos": [40, 168], "size": [120, 50] },
     { "id": "battery", "type": "external", "label": "702050 LiPo", "sublabel": "3.0-4.2V", "pos": [40, 276], "size": [120, 50] },
     { "id": "buck", "type": "backend", "label": "TPS63050", "sublabel": "buck-boost @3.45V", "pos": [220, 168], "size": [120, 50] },
-    { "id": "mcu", "type": "backend", "label": "STM32C551", "sublabel": "HSI 144MHz + Helix", "pos": [400, 276], "size": [120, 50] },
+    { "id": "mcu", "type": "backend", "label": "STM32C552", "sublabel": "HSI 144MHz + Helix", "pos": [400, 276], "size": [120, 50] },
     { "id": "tad5112", "type": "backend", "label": "TAD5112", "sublabel": "DAC + HP amp", "pos": [560, 276], "size": [120, 50] },
     { "id": "headphones", "type": "external", "label": "Headphones", "sublabel": "3.5mm jack", "pos": [860, 276], "size": [120, 50] },
     { "id": "ldo", "type": "backend", "label": "LP5907 #1", "sublabel": "3.3V analog + ferrite", "pos": [560, 168], "size": [120, 50] },
-    { "id": "sd", "type": "database", "label": "microSD", "sublabel": "SPI + FatFs", "pos": [400, 384], "size": [120, 50] },
+    { "id": "sd", "type": "database", "label": "microSD", "sublabel": "SPI2 + FatFs", "pos": [400, 384], "size": [120, 50] },
     { "id": "input", "type": "external", "label": "Input", "sublabel": "TBD - jog, buttons", "pos": [220, 384], "size": [120, 50] },
-    { "id": "display", "type": "frontend", "label": "SSD1306", "sublabel": "OLED I2C", "pos": [560, 384], "size": [120, 50] }
+    { "id": "display", "type": "frontend", "label": "SSD1306", "sublabel": "OLED I2C1", "pos": [560, 384], "size": [120, 50] }
   ],
   "connections": [
     { "id": "usb-to-charger", "from": "usb-c", "to": "charger", "label": "VBUS", "labelAt": [100, 132] },
@@ -26,15 +26,15 @@
     { "id": "buck-to-mcu", "from": "buck", "to": "mcu", "label": "3.45V", "labelAt": [340, 236] },
     { "id": "buck-to-ldo", "from": "buck", "to": "ldo", "label": "3.45V", "labelAt": [400, 165] },
     { "id": "ldo-to-tad5112", "from": "ldo", "to": "tad5112", "label": "3.3V", "labelAt": [680, 232] },
-    { "id": "sd-to-mcu", "from": "sd", "to": "mcu", "label": "SPI 20MHz", "labelAt": [460, 356] },
-    { "id": "mcu-to-tad5112", "from": "mcu", "to": "tad5112", "label": "I2S + I2C", "variant": "emphasis", "labelAt": [500, 340] },
+    { "id": "sd-to-mcu", "from": "sd", "to": "mcu", "label": "SPI2", "labelAt": [460, 356] },
+    { "id": "mcu-to-tad5112", "from": "mcu", "to": "tad5112", "label": "I2S1 + I2C2", "variant": "emphasis", "labelAt": [500, 340] },
     { "id": "tad5112-to-headphones", "from": "tad5112", "to": "headphones", "label": "audio out", "variant": "emphasis", "labelAt": [770, 340] },
     { "id": "input-to-mcu", "from": "input", "to": "mcu", "label": "GPIO", "labelAt": [320, 356] },
-    { "id": "mcu-to-display", "from": "mcu", "to": "display", "label": "I2C", "labelAt": [520, 360] }
+    { "id": "mcu-to-display", "from": "mcu", "to": "display", "label": "I2C1", "labelAt": [520, 360] }
   ],
   "cards": [
     { "dot": "cyan", "title": "Power", "items": ["USB-C to BQ24040 to LiPo cell", "TPS63050 buck-boost @3.45V: MCU, microSD, OLED VBAT", "LP5907 #1 + ferrite @3.3V analog: TAD5112 AVDD", "LP5907 #2 @3.3V digital (DGND): SSD1306 VDD, TAD5112 IOVDD, I2C pull-ups", "PG/CHG open-drain pulled up to 3.45V digital rail"] },
-    { "dot": "emerald", "title": "Audio path", "items": ["microSD (SPI + FatFs) to STM32C551 (Helix decode)", "3-wire I2S + I2C control to TAD5112 (DAC + headphone amp)", "TAD5112 built-in digital volume; no separate amp or attenuator", "22.5792MHz MEMS oscillator (DSC6001) = I2S external clock, 44.1kHz native; SYSCLK = HSI 144MHz", "AGND audio island star-tied to DGND at battery ground"] },
-    { "dot": "rose", "title": "Control", "items": ["Input (TBD - jog, buttons) to MCU GPIO", "SSD1306 OLED I2C + TAD5112 I2C on shared bus", "PG/CHG + battery voltage sense to MCU"] }
+    { "dot": "emerald", "title": "Audio path", "items": ["microSD (SPI2 + FatFs) to STM32C551 (Helix decode)", "I2S1 (3-wire) + I2C2 control to TAD5112 (DAC + headphone amp)", "TAD5112 built-in digital volume; no separate amp or attenuator", "22.5792MHz MEMS oscillator (DSC6001) to AUDIOCLK = I2S kernel clock, 44.1kHz native", "AGND audio island star-tied to DGND at battery ground"] },
+    { "dot": "rose", "title": "Control", "items": ["Input (TBD - jog, buttons) to MCU GPIO", "SSD1306 on I2C1; TAD5112 on I2C2 (separate buses)", "Display reset, SD card-detect, DAC GPI1/GPO1/GPIO1/GPIO2 on GPIO", "CHGR_NPG / CHGR_NCHG to MCU"] }
   ]
 }
