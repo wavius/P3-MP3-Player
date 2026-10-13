@@ -847,6 +847,230 @@
           "type": "user_gpio"
         },
         "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PA14(JTCK/SWCLK)",
+          "position": "49",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 14,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "GPIOA",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PC3",
+          "position": "11",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 3,
+          "port": "C"
+        },
+        "signal": {
+          "instance": "ADC1",
+          "name": "ADC1_IN11",
+          "type": "analog"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PE2",
+          "position": "1",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 2,
+          "port": "E"
+        },
+        "signal": {
+          "instance": "GPIOE",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PC13",
+          "position": "2",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "t"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 13,
+          "port": "C"
+        },
+        "signal": {
+          "instance": "GPIOC",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PC14-OSC32_IN(OSC32_IN)",
+          "position": "3",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 14,
+          "port": "C"
+        },
+        "signal": {
+          "instance": "GPIOC",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PC15-OSC32_OUT(OSC32_OUT)",
+          "position": "4",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 15,
+          "port": "C"
+        },
+        "signal": {
+          "instance": "GPIOC",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PH0-OSC_IN(PH0)",
+          "position": "5",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 0,
+          "port": "H"
+        },
+        "signal": {
+          "instance": "GPIOH",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PH1-OSC_OUT(PH1)",
+          "position": "6",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 1,
+          "port": "H"
+        },
+        "signal": {
+          "instance": "GPIOH",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PC0",
+          "position": "8",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 0,
+          "port": "C"
+        },
+        "signal": {
+          "instance": "GPIOC",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PC1",
+          "position": "9",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "t",
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 1,
+          "port": "C"
+        },
+        "signal": {
+          "instance": "GPIOC",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PC2",
+          "position": "10",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 2,
+          "port": "C"
+        },
+        "signal": {
+          "instance": "GPIOC",
+          "name": "GPIO",
+          "type": "user_gpio"
+        },
+        "pinned": true
       }
     ],
     "needConfigurations": [
@@ -1317,6 +1541,72 @@
       "labels": [
         "CHGR_NCHG"
       ]
+    },
+    {
+      "position": "49",
+      "labels": [
+        "AMP_NSD"
+      ]
+    },
+    {
+      "position": "11",
+      "labels": [
+        "VBAT"
+      ]
+    },
+    {
+      "position": "1",
+      "labels": [
+        "SLIDE1"
+      ]
+    },
+    {
+      "position": "2",
+      "labels": [
+        "SLIDE2"
+      ]
+    },
+    {
+      "position": "3",
+      "labels": [
+        "SLIDE3"
+      ]
+    },
+    {
+      "position": "4",
+      "labels": [
+        "VOLPLUS"
+      ]
+    },
+    {
+      "position": "5",
+      "labels": [
+        "VOLMINUS"
+      ]
+    },
+    {
+      "position": "6",
+      "labels": [
+        "PLAY"
+      ]
+    },
+    {
+      "position": "8",
+      "labels": [
+        "HOME"
+      ]
+    },
+    {
+      "position": "9",
+      "labels": [
+        "CW"
+      ]
+    },
+    {
+      "position": "10",
+      "labels": [
+        "CCW"
+      ]
     }
   ],
   "pinout-gpio-assignations": [
@@ -1436,6 +1726,129 @@
           "ioStructure": "FT",
           "index": 0,
           "port": "B"
+        },
+        {
+          "name": "PA14(JTCK/SWCLK)",
+          "position": "49",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 14,
+          "port": "A"
+        },
+        {
+          "name": "PE2",
+          "position": "1",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 2,
+          "port": "E"
+        },
+        {
+          "name": "PC13",
+          "position": "2",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "t"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 13,
+          "port": "C"
+        },
+        {
+          "name": "PC14-OSC32_IN(OSC32_IN)",
+          "position": "3",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 14,
+          "port": "C"
+        },
+        {
+          "name": "PC15-OSC32_OUT(OSC32_OUT)",
+          "position": "4",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 15,
+          "port": "C"
+        },
+        {
+          "name": "PH0-OSC_IN(PH0)",
+          "position": "5",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 0,
+          "port": "H"
+        },
+        {
+          "name": "PH1-OSC_OUT(PH1)",
+          "position": "6",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "f"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 1,
+          "port": "H"
+        },
+        {
+          "name": "PC0",
+          "position": "8",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 0,
+          "port": "C"
+        },
+        {
+          "name": "PC1",
+          "position": "9",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "t",
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 1,
+          "port": "C"
+        },
+        {
+          "name": "PC2",
+          "position": "10",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 2,
+          "port": "C"
         }
       ]
     }
@@ -2803,6 +3216,19 @@ solution:
               },
               "pins": [
                 {
+                  "_foreignKey": "PA14(JTCK/SWCLK)",
+                  "basic": {
+                    "mode": "OUTPUT",
+                    "pull": "DOWN",
+                    "enable_exti": false,
+                    "output_active_state": "SET",
+                    "output_init_state": "RESET",
+                    "output_type": "PUSHPULL",
+                    "speed": "LOW"
+                  },
+                  "label_name": []
+                },
+                {
                   "_foreignKey": "PB0",
                   "basic": {
                     "mode": "INPUT",
@@ -2830,6 +3256,33 @@ solution:
                     "output_init_state": "RESET",
                     "output_type": "PUSHPULL",
                     "speed": "LOW"
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PC0",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PC1",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PC2",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
                   },
                   "label_name": []
                 },
@@ -2887,7 +3340,61 @@ solution:
                   "label_name": []
                 },
                 {
+                  "_foreignKey": "PC13",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PC14-OSC32_IN(OSC32_IN)",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PC15-OSC32_OUT(OSC32_OUT)",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
                   "_foreignKey": "PD2",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PE2",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PH0-OSC_IN(PH0)",
+                  "basic": {
+                    "mode": "INPUT",
+                    "pull": "NO",
+                    "enable_exti": false
+                  },
+                  "label_name": []
+                },
+                {
+                  "_foreignKey": "PH1-OSC_OUT(PH1)",
                   "basic": {
                     "mode": "INPUT",
                     "pull": "NO",

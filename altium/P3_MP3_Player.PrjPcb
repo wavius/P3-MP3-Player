@@ -51,9 +51,9 @@ PrefsRevisionGUID=
 
 [Document1]
 DocumentPath=01_Top_Level.SchDoc
-AnnotationEnabled=0
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotationEnabled=1
+AnnotateStartValue=100
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=0
@@ -85,9 +85,9 @@ DocumentUniqueId=LOJXMQSA
 
 [Document3]
 DocumentPath=03_MCU.SchDoc
-AnnotationEnabled=0
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotationEnabled=1
+AnnotateStartValue=300
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=2
@@ -136,9 +136,9 @@ DocumentUniqueId=QUJUUBEF
 
 [Document6]
 DocumentPath=04_Audio.SchDoc
-AnnotationEnabled=0
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotationEnabled=1
+AnnotateStartValue=400
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=3
@@ -153,7 +153,7 @@ DocumentUniqueId=FWZZGYSN
 
 [Document7]
 DocumentPath=05_Display.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=500
 AnnotationIndexControlEnabled=1
 AnnotateSuffix=
@@ -171,11 +171,11 @@ DocumentUniqueId=VPUEHFYU
 [Document8]
 DocumentPath=06_Memory.SchDoc
 AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotateStartValue=600
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=5
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
