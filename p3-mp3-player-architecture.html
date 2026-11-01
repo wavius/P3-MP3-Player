@@ -5036,14 +5036,14 @@
         <path data-edge-from="usb-c" data-edge-to="charger" data-edge-label="VBUS" data-edge-key="0" data-edge-id="usb-to-charger" data-composition-points="100,110;100,168" d="M 100 110 L 100 168" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         <path data-edge-from="charger" data-edge-to="battery" data-edge-label="charge" data-edge-key="1" data-edge-id="charger-to-battery" data-composition-points="100,218;100,276" d="M 100 218 L 100 276" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         <path data-edge-from="battery" data-edge-to="buck" data-edge-label="discharge" data-edge-key="2" data-edge-id="battery-to-buck" data-composition-points="160,301;190,301;190,193;220,193" d="M 160 301 L 182 301 Q 190 301 190 293 L 190 201 Q 190 193 198 193 L 220 193" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="buck" data-edge-to="mcu" data-edge-label="3.45V" data-edge-key="3" data-edge-id="buck-to-mcu" data-composition-points="340,193;370,193;370,301;400,301" d="M 340 193 L 362 193 Q 370 193 370 201 L 370 293 Q 370 301 378 301 L 400 301" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="buck" data-edge-to="ldo" data-edge-label="3.45V" data-edge-key="4" data-edge-id="buck-to-ldo" data-composition-points="340,193;560,193" d="M 340 193 L 560 193" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="ldo" data-edge-to="tad5112" data-edge-label="3.3V" data-edge-key="5" data-edge-id="ldo-to-tad5112" data-composition-points="620,218;620,276" d="M 620 218 L 620 276" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="buck" data-edge-to="mcu" data-edge-label="3.3V" data-edge-key="3" data-edge-id="buck-to-mcu" data-composition-points="340,193;370,193;370,301;400,301" d="M 340 193 L 362 193 Q 370 193 370 201 L 370 293 Q 370 301 378 301 L 400 301" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="buck" data-edge-to="ldo" data-edge-label="3.3V" data-edge-key="4" data-edge-id="buck-to-ldo" data-composition-points="340,193;560,193" d="M 340 193 L 560 193" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="ldo" data-edge-to="max9850" data-edge-label="3.0V" data-edge-key="5" data-edge-id="ldo-to-max9850" data-composition-points="620,218;620,276" d="M 620 218 L 620 276" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         <path data-edge-from="sd" data-edge-to="mcu" data-edge-label="SPI2" data-edge-key="6" data-edge-id="sd-to-mcu" data-composition-points="460,384;460,326" d="M 460 384 L 460 326" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="mcu" data-edge-to="tad5112" data-edge-label="I2S1 + I2C2" data-edge-key="7" data-edge-id="mcu-to-tad5112" data-composition-points="520,301;560,301" d="M 520 301 L 560 301" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
-        <path data-edge-from="tad5112" data-edge-to="headphones" data-edge-label="audio out" data-edge-key="8" data-edge-id="tad5112-to-headphones" data-composition-points="680,301;860,301" d="M 680 301 L 860 301" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="mcu" data-edge-to="max9850" data-edge-label="I2S1 + I2C1" data-edge-key="7" data-edge-id="mcu-to-max9850" data-composition-points="520,301;560,301" d="M 520 301 L 560 301" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="max9850" data-edge-to="headphones" data-edge-label="audio out" data-edge-key="8" data-edge-id="max9850-to-headphones" data-composition-points="680,301;860,301" d="M 680 301 L 860 301" class="a-emphasis" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
         <path data-edge-from="input" data-edge-to="mcu" data-edge-label="GPIO" data-edge-key="9" data-edge-id="input-to-mcu" data-composition-points="340,409;370,409;370,301;400,301" d="M 340 409 L 362 409 Q 370 409 370 401 L 370 309 Q 370 301 378 301 L 400 301" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="mcu" data-edge-to="display" data-edge-label="I2C1" data-edge-key="10" data-edge-id="mcu-to-display" data-composition-points="520,301;540,301;540,409;560,409" d="M 520 301 L 532 301 Q 540 301 540 309 L 540 401 Q 540 409 548 409 L 560 409" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="mcu" data-edge-to="display" data-edge-label="I2C2" data-edge-key="10" data-edge-id="mcu-to-display" data-composition-points="520,301;540,301;540,409;560,409" d="M 520 301 L 532 301 Q 540 301 540 309 L 540 401 Q 540 409 548 409 L 560 409" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
 
         <!-- Components -->
         <g id="node-usb-c" data-node-id="usb-c" data-node-label="USB-C" tabindex="0" role="button" aria-label="Focus USB-C, 5V power + data, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="5V power + data" data-node-context="Architecture component">
@@ -5081,36 +5081,36 @@
         <text data-detail="context" x="100" y="315" class="t-muted" font-size="9" text-anchor="middle">3.0-4.2V</text>
         </g>
 
-        <g id="node-buck" data-node-id="buck" data-node-label="TPS63050" tabindex="0" role="button" aria-label="Focus TPS63050, buck-boost @3.45V, Architecture component" aria-pressed="false" data-node-kind="backend" data-node-sublabel="buck-boost @3.45V" data-node-context="Architecture component">
-          <title>TPS63050 · buck-boost @3.45V · Architecture component</title>
+        <g id="node-buck" data-node-id="buck" data-node-label="TPS63050" tabindex="0" role="button" aria-label="Focus TPS63050, buck-boost @3.3V, Architecture component" aria-pressed="false" data-node-kind="backend" data-node-sublabel="buck-boost @3.3V" data-node-context="Architecture component">
+          <title>TPS63050 · buck-boost @3.3V · Architecture component</title>
           <rect x="220" y="168" width="120" height="50" rx="6" class="c-mask"/>
           <rect x="220" y="168" width="120" height="50" rx="6" class="c-backend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(226 174) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="280" y="191" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">TPS63050</text>
-        <text data-detail="context" x="280" y="207" class="t-muted" font-size="9" text-anchor="middle">buck-boost @3.45V</text>
+        <text data-detail="context" x="280" y="207" class="t-muted" font-size="9" text-anchor="middle">buck-boost @3.3V</text>
         </g>
 
-        <g id="node-mcu" data-node-id="mcu" data-node-label="STM32C552" tabindex="0" role="button" aria-label="Focus STM32C552, HSI 144MHz + Helix, Architecture component" aria-pressed="false" data-node-kind="backend" data-node-sublabel="HSI 144MHz + Helix" data-node-context="Architecture component">
-          <title>STM32C552 · HSI 144MHz + Helix · Architecture component</title>
+        <g id="node-mcu" data-node-id="mcu" data-node-label="STM32C552" tabindex="0" role="button" aria-label="Focus STM32C552, Alt: STM32C562, Architecture component" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Alt: STM32C562" data-node-context="Architecture component">
+          <title>STM32C552 · Alt: STM32C562 · Architecture component</title>
           <rect x="400" y="276" width="120" height="50" rx="6" class="c-mask"/>
           <rect x="400" y="276" width="120" height="50" rx="6" class="c-backend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(406 282) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="460" y="299" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">STM32C552</text>
-        <text data-detail="context" x="460" y="315" class="t-muted" font-size="9" text-anchor="middle">HSI 144MHz + Helix</text>
+        <text data-detail="context" x="460" y="315" class="t-muted" font-size="9" text-anchor="middle">Alt: STM32C562</text>
         </g>
 
-        <g id="node-tad5112" data-node-id="tad5112" data-node-label="TAD5112" tabindex="0" role="button" aria-label="Focus TAD5112, DAC + HP amp, Architecture component" aria-pressed="false" data-node-kind="backend" data-node-sublabel="DAC + HP amp" data-node-context="Architecture component">
-          <title>TAD5112 · DAC + HP amp · Architecture component</title>
+        <g id="node-max9850" data-node-id="max9850" data-node-label="MAX9850" tabindex="0" role="button" aria-label="Focus MAX9850, DAC + HP amp, Architecture component" aria-pressed="false" data-node-kind="backend" data-node-sublabel="DAC + HP amp" data-node-context="Architecture component">
+          <title>MAX9850 · DAC + HP amp · Architecture component</title>
           <rect x="560" y="276" width="120" height="50" rx="6" class="c-mask"/>
           <rect x="560" y="276" width="120" height="50" rx="6" class="c-backend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(566 282) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
-          <text data-node-label="" data-detail-anchor="" x="620" y="299" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">TAD5112</text>
+          <text data-node-label="" data-detail-anchor="" x="620" y="299" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">MAX9850</text>
         <text data-detail="context" x="620" y="315" class="t-muted" font-size="9" text-anchor="middle">DAC + HP amp</text>
         </g>
 
@@ -5126,15 +5126,15 @@
         <text data-detail="context" x="920" y="315" class="t-muted" font-size="9" text-anchor="middle">3.5mm jack</text>
         </g>
 
-        <g id="node-ldo" data-node-id="ldo" data-node-label="LP5907 #1" tabindex="0" role="button" aria-label="Focus LP5907 #1, 3.3V analog + ferrite, Architecture component" aria-pressed="false" data-node-kind="backend" data-node-sublabel="3.3V analog + ferrite" data-node-context="Architecture component">
-          <title>LP5907 #1 · 3.3V analog + ferrite · Architecture component</title>
+        <g id="node-ldo" data-node-id="ldo" data-node-label="TPS7A2030" tabindex="0" role="button" aria-label="Focus TPS7A2030, 3.0V analog, Architecture component" aria-pressed="false" data-node-kind="backend" data-node-sublabel="3.0V analog" data-node-context="Architecture component">
+          <title>TPS7A2030 · 3.0V analog · Architecture component</title>
           <rect x="560" y="168" width="120" height="50" rx="6" class="c-mask"/>
           <rect x="560" y="168" width="120" height="50" rx="6" class="c-backend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(566 174) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
-          <text data-node-label="" data-detail-anchor="" x="620" y="191" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">LP5907 #1</text>
-        <text data-detail="context" x="620" y="207" class="t-muted" font-size="8.8" text-anchor="middle">3.3V analog + ferrite</text>
+          <text data-node-label="" data-detail-anchor="" x="620" y="191" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">TPS7A2030</text>
+        <text data-detail="context" x="620" y="207" class="t-muted" font-size="9" text-anchor="middle">3.0V analog</text>
         </g>
 
         <g id="node-sd" data-node-id="sd" data-node-label="microSD" tabindex="0" role="button" aria-label="Focus microSD, SPI2 + FatFs, Architecture component" aria-pressed="false" data-node-kind="database" data-node-sublabel="SPI2 + FatFs" data-node-context="Architecture component">
@@ -5149,8 +5149,8 @@
         <text data-detail="context" x="460" y="423" class="t-muted" font-size="9" text-anchor="middle">SPI2 + FatFs</text>
         </g>
 
-        <g id="node-input" data-node-id="input" data-node-label="Input" tabindex="0" role="button" aria-label="Focus Input, TBD - jog, buttons, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="TBD - jog, buttons" data-node-context="Architecture component">
-          <title>Input · TBD - jog, buttons · Architecture component</title>
+        <g id="node-input" data-node-id="input" data-node-label="Input" tabindex="0" role="button" aria-label="Focus Input, 6 switches + 3-way, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="6 switches + 3-way" data-node-context="Architecture component">
+          <title>Input · 6 switches + 3-way · Architecture component</title>
           <rect x="220" y="384" width="120" height="50" rx="6" class="c-mask"/>
           <rect x="220" y="384" width="120" height="50" rx="6" class="c-external" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(226 390) scale(0.6875)">
@@ -5158,11 +5158,11 @@
             <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="280" y="407" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Input</text>
-        <text data-detail="context" x="280" y="423" class="t-muted" font-size="9" text-anchor="middle">TBD - jog, buttons</text>
+        <text data-detail="context" x="280" y="423" class="t-muted" font-size="9" text-anchor="middle">6 switches + 3-way</text>
         </g>
 
-        <g id="node-display" data-node-id="display" data-node-label="SSD1306" tabindex="0" role="button" aria-label="Focus SSD1306, OLED I2C1, Architecture component" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="OLED I2C1" data-node-context="Architecture component">
-          <title>SSD1306 · OLED I2C1 · Architecture component</title>
+        <g id="node-display" data-node-id="display" data-node-label="SSD1306" tabindex="0" role="button" aria-label="Focus SSD1306, OLED I2C2, Architecture component" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="OLED I2C2" data-node-context="Architecture component">
+          <title>SSD1306 · OLED I2C2 · Architecture component</title>
           <rect x="560" y="384" width="120" height="50" rx="6" class="c-mask"/>
           <rect x="560" y="384" width="120" height="50" rx="6" class="c-frontend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(566 390) scale(0.6875)">
@@ -5172,7 +5172,7 @@
             <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="620" y="407" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">SSD1306</text>
-        <text data-detail="context" x="620" y="423" class="t-muted" font-size="9" text-anchor="middle">OLED I2C1</text>
+        <text data-detail="context" x="620" y="423" class="t-muted" font-size="9" text-anchor="middle">OLED I2C2</text>
         </g>
 
         <!-- Connection labels -->
@@ -5188,27 +5188,27 @@
           <rect x="138.4" y="248" width="53.199999999999996" height="14" rx="3" class="c-mask"/>
           <text x="165" y="258" class="t-muted" font-size="8" text-anchor="middle">discharge</text>
         </g>
-        <g data-detail="context" data-edge-from="buck" data-edge-to="mcu" data-edge-label="3.45V" data-edge-key="3" data-edge-id="buck-to-mcu">
-          <rect x="323" y="226" width="34" height="14" rx="3" class="c-mask"/>
-          <text x="340" y="236" class="t-muted" font-size="8" text-anchor="middle">3.45V</text>
+        <g data-detail="context" data-edge-from="buck" data-edge-to="mcu" data-edge-label="3.3V" data-edge-key="3" data-edge-id="buck-to-mcu">
+          <rect x="325" y="226" width="30" height="14" rx="3" class="c-mask"/>
+          <text x="340" y="236" class="t-muted" font-size="8" text-anchor="middle">3.3V</text>
         </g>
-        <g data-detail="context" data-edge-from="buck" data-edge-to="ldo" data-edge-label="3.45V" data-edge-key="4" data-edge-id="buck-to-ldo">
-          <rect x="383" y="155" width="34" height="14" rx="3" class="c-mask"/>
-          <text x="400" y="165" class="t-muted" font-size="8" text-anchor="middle">3.45V</text>
+        <g data-detail="context" data-edge-from="buck" data-edge-to="ldo" data-edge-label="3.3V" data-edge-key="4" data-edge-id="buck-to-ldo">
+          <rect x="385" y="155" width="30" height="14" rx="3" class="c-mask"/>
+          <text x="400" y="165" class="t-muted" font-size="8" text-anchor="middle">3.3V</text>
         </g>
-        <g data-detail="context" data-edge-from="ldo" data-edge-to="tad5112" data-edge-label="3.3V" data-edge-key="5" data-edge-id="ldo-to-tad5112">
+        <g data-detail="context" data-edge-from="ldo" data-edge-to="max9850" data-edge-label="3.0V" data-edge-key="5" data-edge-id="ldo-to-max9850">
           <rect x="665" y="222" width="30" height="14" rx="3" class="c-mask"/>
-          <text x="680" y="232" class="t-muted" font-size="8" text-anchor="middle">3.3V</text>
+          <text x="680" y="232" class="t-muted" font-size="8" text-anchor="middle">3.0V</text>
         </g>
         <g data-detail="context" data-edge-from="sd" data-edge-to="mcu" data-edge-label="SPI2" data-edge-key="6" data-edge-id="sd-to-mcu">
           <rect x="445" y="346" width="30" height="14" rx="3" class="c-mask"/>
           <text x="460" y="356" class="t-muted" font-size="8" text-anchor="middle">SPI2</text>
         </g>
-        <g data-detail="context" data-edge-from="mcu" data-edge-to="tad5112" data-edge-label="I2S1 + I2C2" data-edge-key="7" data-edge-id="mcu-to-tad5112">
+        <g data-detail="context" data-edge-from="mcu" data-edge-to="max9850" data-edge-label="I2S1 + I2C1" data-edge-key="7" data-edge-id="mcu-to-max9850">
           <rect x="468.6" y="330" width="62.8" height="14" rx="3" class="c-mask"/>
-          <text x="500" y="340" class="t-backend" font-size="8" text-anchor="middle">I2S1 + I2C2</text>
+          <text x="500" y="340" class="t-backend" font-size="8" text-anchor="middle">I2S1 + I2C1</text>
         </g>
-        <g data-detail="context" data-edge-from="tad5112" data-edge-to="headphones" data-edge-label="audio out" data-edge-key="8" data-edge-id="tad5112-to-headphones">
+        <g data-detail="context" data-edge-from="max9850" data-edge-to="headphones" data-edge-label="audio out" data-edge-key="8" data-edge-id="max9850-to-headphones">
           <rect x="743.4" y="330" width="53.199999999999996" height="14" rx="3" class="c-mask"/>
           <text x="770" y="340" class="t-backend" font-size="8" text-anchor="middle">audio out</text>
         </g>
@@ -5216,9 +5216,9 @@
           <rect x="305" y="346" width="30" height="14" rx="3" class="c-mask"/>
           <text x="320" y="356" class="t-muted" font-size="8" text-anchor="middle">GPIO</text>
         </g>
-        <g data-detail="context" data-edge-from="mcu" data-edge-to="display" data-edge-label="I2C1" data-edge-key="10" data-edge-id="mcu-to-display">
+        <g data-detail="context" data-edge-from="mcu" data-edge-to="display" data-edge-label="I2C2" data-edge-key="10" data-edge-id="mcu-to-display">
           <rect x="505" y="350" width="30" height="14" rx="3" class="c-mask"/>
-          <text x="520" y="360" class="t-muted" font-size="8" text-anchor="middle">I2C1</text>
+          <text x="520" y="360" class="t-muted" font-size="8" text-anchor="middle">I2C2</text>
         </g>
 
         <!-- Boundary labels (foreground masks keep routes out of titles) -->
@@ -5436,11 +5436,10 @@
           <h3>Power</h3>
         </div>
         <ul>
-          <li>&bull; USB-C to BQ24040 to LiPo cell</li>
-          <li>&bull; TPS63050 buck-boost @3.45V: MCU, microSD, OLED VBAT</li>
-          <li>&bull; LP5907 #1 + ferrite @3.3V analog: TAD5112 AVDD</li>
-          <li>&bull; LP5907 #2 @3.3V digital (DGND): SSD1306 VDD, TAD5112 IOVDD, I2C pull-ups</li>
-          <li>&bull; PG/CHG open-drain pulled up to 3.45V digital rail</li>
+          <li>&bull; USB-C → BQ24040 → LiPo → TPS63050</li>
+          <li>&bull; 3.3V digital: MCU, microSD, OLED VDD/VBAT, MAX9850 DVDD</li>
+          <li>&bull; 3.0V analog: TPS7A2030PDQNR → MAX9850 AVDD/PVDD</li>
+          <li>&bull; I2C and charger-status pull-ups: 3.3V digital</li>
         </ul>
       </div>
 
@@ -5450,11 +5449,9 @@
           <h3>Audio path</h3>
         </div>
         <ul>
-          <li>&bull; microSD (SPI2 + FatFs) to STM32C551 (Helix decode)</li>
-          <li>&bull; I2S1 (3-wire) + I2C2 control to TAD5112 (DAC + headphone amp)</li>
-          <li>&bull; TAD5112 built-in digital volume; no separate amp or attenuator</li>
-          <li>&bull; 22.5792MHz MEMS oscillator (DSC6001) to AUDIOCLK = I2S kernel clock, 44.1kHz native</li>
-          <li>&bull; AGND audio island star-tied to DGND at battery ground</li>
+          <li>&bull; microSD → SPI2 / FatFs → MCU / Helix</li>
+          <li>&bull; I2S1 → MAX9850 DAC + headphone amp → 3.5mm jack</li>
+          <li>&bull; 22.5792MHz DSC6001 → MCU AUDIOCLK + MAX9850 MCLK</li>
         </ul>
       </div>
 
@@ -5464,10 +5461,10 @@
           <h3>Control</h3>
         </div>
         <ul>
-          <li>&bull; Input (TBD - jog, buttons) to MCU GPIO</li>
-          <li>&bull; SSD1306 on I2C1; TAD5112 on I2C2 (separate buses)</li>
-          <li>&bull; Display reset, SD card-detect, DAC GPI1/GPO1/GPIO1/GPIO2 on GPIO</li>
-          <li>&bull; CHGR_NPG / CHGR_NCHG to MCU</li>
+          <li>&bull; Buttons: vol+, vol-, play, home</li>
+          <li>&bull; Rotary controls: clockwise, counterclockwise; three-way selector</li>
+          <li>&bull; I2C1: MAX9850 volume/mute; I2C2: SSD1306 display</li>
+          <li>&bull; GPIO: switches, display reset, card detect, charger status</li>
         </ul>
       </div>
     </div>

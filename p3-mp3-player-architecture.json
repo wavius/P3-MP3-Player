@@ -7,34 +7,34 @@
     "quality_profile": "showcase"
   },
   "components": [
-    { "id": "usb-c", "type": "external", "label": "USB-C", "sublabel": "5V power + data", "pos": [40, 60], "size": [120, 50] },
-    { "id": "charger", "type": "backend", "label": "BQ24040", "sublabel": "LiPo charger", "pos": [40, 168], "size": [120, 50] },
-    { "id": "battery", "type": "external", "label": "702050 LiPo", "sublabel": "3.0-4.2V", "pos": [40, 276], "size": [120, 50] },
-    { "id": "buck", "type": "backend", "label": "TPS63050", "sublabel": "buck-boost @3.45V", "pos": [220, 168], "size": [120, 50] },
-    { "id": "mcu", "type": "backend", "label": "STM32C552", "sublabel": "HSI 144MHz + Helix", "pos": [400, 276], "size": [120, 50] },
-    { "id": "tad5112", "type": "backend", "label": "TAD5112", "sublabel": "DAC + HP amp", "pos": [560, 276], "size": [120, 50] },
-    { "id": "headphones", "type": "external", "label": "Headphones", "sublabel": "3.5mm jack", "pos": [860, 276], "size": [120, 50] },
-    { "id": "ldo", "type": "backend", "label": "LP5907 #1", "sublabel": "3.3V analog + ferrite", "pos": [560, 168], "size": [120, 50] },
-    { "id": "sd", "type": "database", "label": "microSD", "sublabel": "SPI2 + FatFs", "pos": [400, 384], "size": [120, 50] },
-    { "id": "input", "type": "external", "label": "Input", "sublabel": "TBD - jog, buttons", "pos": [220, 384], "size": [120, 50] },
-    { "id": "display", "type": "frontend", "label": "SSD1306", "sublabel": "OLED I2C1", "pos": [560, 384], "size": [120, 50] }
+    {"id": "usb-c", "type": "external", "label": "USB-C", "sublabel": "5V power + data", "pos": [40, 60], "size": [120, 50]},
+    {"id": "charger", "type": "backend", "label": "BQ24040", "sublabel": "LiPo charger", "pos": [40, 168], "size": [120, 50]},
+    {"id": "battery", "type": "external", "label": "702050 LiPo", "sublabel": "3.0-4.2V", "pos": [40, 276], "size": [120, 50]},
+    {"id": "buck", "type": "backend", "label": "TPS63050", "sublabel": "buck-boost @3.3V", "pos": [220, 168], "size": [120, 50]},
+    {"id": "mcu", "type": "backend", "label": "STM32C552", "sublabel": "Alt: STM32C562", "pos": [400, 276], "size": [120, 50]},
+    {"id": "max9850", "type": "backend", "label": "MAX9850", "sublabel": "DAC + HP amp", "pos": [560, 276], "size": [120, 50]},
+    {"id": "headphones", "type": "external", "label": "Headphones", "sublabel": "3.5mm jack", "pos": [860, 276], "size": [120, 50]},
+    {"id": "ldo", "type": "backend", "label": "TPS7A2030", "sublabel": "3.0V analog", "pos": [560, 168], "size": [120, 50]},
+    {"id": "sd", "type": "database", "label": "microSD", "sublabel": "SPI2 + FatFs", "pos": [400, 384], "size": [120, 50]},
+    {"id": "input", "type": "external", "label": "Input", "sublabel": "6 switches + 3-way", "pos": [220, 384], "size": [120, 50]},
+    {"id": "display", "type": "frontend", "label": "SSD1306", "sublabel": "OLED I2C2", "pos": [560, 384], "size": [120, 50]}
   ],
   "connections": [
-    { "id": "usb-to-charger", "from": "usb-c", "to": "charger", "label": "VBUS", "labelAt": [100, 132] },
-    { "id": "charger-to-battery", "from": "charger", "to": "battery", "label": "charge", "labelAt": [100, 236] },
-    { "id": "battery-to-buck", "from": "battery", "to": "buck", "label": "discharge", "labelAt": [165, 258] },
-    { "id": "buck-to-mcu", "from": "buck", "to": "mcu", "label": "3.45V", "labelAt": [340, 236] },
-    { "id": "buck-to-ldo", "from": "buck", "to": "ldo", "label": "3.45V", "labelAt": [400, 165] },
-    { "id": "ldo-to-tad5112", "from": "ldo", "to": "tad5112", "label": "3.3V", "labelAt": [680, 232] },
-    { "id": "sd-to-mcu", "from": "sd", "to": "mcu", "label": "SPI2", "labelAt": [460, 356] },
-    { "id": "mcu-to-tad5112", "from": "mcu", "to": "tad5112", "label": "I2S1 + I2C2", "variant": "emphasis", "labelAt": [500, 340] },
-    { "id": "tad5112-to-headphones", "from": "tad5112", "to": "headphones", "label": "audio out", "variant": "emphasis", "labelAt": [770, 340] },
-    { "id": "input-to-mcu", "from": "input", "to": "mcu", "label": "GPIO", "labelAt": [320, 356] },
-    { "id": "mcu-to-display", "from": "mcu", "to": "display", "label": "I2C1", "labelAt": [520, 360] }
+    {"id": "usb-to-charger", "from": "usb-c", "to": "charger", "label": "VBUS", "labelAt": [100, 132]},
+    {"id": "charger-to-battery", "from": "charger", "to": "battery", "label": "charge", "labelAt": [100, 236]},
+    {"id": "battery-to-buck", "from": "battery", "to": "buck", "label": "discharge", "labelAt": [165, 258]},
+    {"id": "buck-to-mcu", "from": "buck", "to": "mcu", "label": "3.3V", "labelAt": [340, 236]},
+    {"id": "buck-to-ldo", "from": "buck", "to": "ldo", "label": "3.3V", "labelAt": [400, 165]},
+    {"id": "ldo-to-max9850", "from": "ldo", "to": "max9850", "label": "3.0V", "labelAt": [680, 232]},
+    {"id": "sd-to-mcu", "from": "sd", "to": "mcu", "label": "SPI2", "labelAt": [460, 356]},
+    {"id": "mcu-to-max9850", "from": "mcu", "to": "max9850", "label": "I2S1 + I2C1", "variant": "emphasis", "labelAt": [500, 340]},
+    {"id": "max9850-to-headphones", "from": "max9850", "to": "headphones", "label": "audio out", "variant": "emphasis", "labelAt": [770, 340]},
+    {"id": "input-to-mcu", "from": "input", "to": "mcu", "label": "GPIO", "labelAt": [320, 356]},
+    {"id": "mcu-to-display", "from": "mcu", "to": "display", "label": "I2C2", "labelAt": [520, 360]}
   ],
   "cards": [
-    { "dot": "cyan", "title": "Power", "items": ["USB-C to BQ24040 to LiPo cell", "TPS63050 buck-boost @3.45V: MCU, microSD, OLED VBAT", "LP5907 #1 + ferrite @3.3V analog: TAD5112 AVDD", "LP5907 #2 @3.3V digital (DGND): SSD1306 VDD, TAD5112 IOVDD, I2C pull-ups", "PG/CHG open-drain pulled up to 3.45V digital rail"] },
-    { "dot": "emerald", "title": "Audio path", "items": ["microSD (SPI2 + FatFs) to STM32C551 (Helix decode)", "I2S1 (3-wire) + I2C2 control to TAD5112 (DAC + headphone amp)", "TAD5112 built-in digital volume; no separate amp or attenuator", "22.5792MHz MEMS oscillator (DSC6001) to AUDIOCLK = I2S kernel clock, 44.1kHz native", "AGND audio island star-tied to DGND at battery ground"] },
-    { "dot": "rose", "title": "Control", "items": ["Input (TBD - jog, buttons) to MCU GPIO", "SSD1306 on I2C1; TAD5112 on I2C2 (separate buses)", "Display reset, SD card-detect, DAC GPI1/GPO1/GPIO1/GPIO2 on GPIO", "CHGR_NPG / CHGR_NCHG to MCU"] }
+    {"dot": "cyan", "title": "Power", "items": ["USB-C → BQ24040 → LiPo → TPS63050", "3.3V digital: MCU, microSD, OLED VDD/VBAT, MAX9850 DVDD", "3.0V analog: TPS7A2030PDQNR → MAX9850 AVDD/PVDD", "I2C and charger-status pull-ups: 3.3V digital"]},
+    {"dot": "emerald", "title": "Audio path", "items": ["microSD → SPI2 / FatFs → MCU / Helix", "I2S1 → MAX9850 DAC + headphone amp → 3.5mm jack", "22.5792MHz DSC6001 → MCU AUDIOCLK + MAX9850 MCLK"]},
+    {"dot": "rose", "title": "Control", "items": ["Buttons: vol+, vol-, play, home", "Rotary controls: clockwise, counterclockwise; three-way selector", "I2C1: MAX9850 volume/mute; I2C2: SSD1306 display", "GPIO: switches, display reset, card detect, charger status"]}
   ]
 }
