@@ -1,7 +1,7 @@
 # P3 MP3 Player — Architecture
 
 ## Outline
-Battery-powered MP3 player modeled on the Sony Walkman NW-S203F (grown body ~110×24×20mm). USB-C charging, microSD storage, 3.5mm headphone out, OLED display, six switches + a three-way switch.
+Battery-powered MP3 player modeled on the Sony Walkman NW-S203F (grown body ~110×24×20mm). USB-C charging, microSD storage, 3.5mm headphone out, OLED display, seven switches (no three-way switch).
 
 ## Blocks
 - MCU — STM32C552RET6 (decode, I2S, USB, UI); STM32C562 alternative (exact ordering code and compatibility to confirm)
@@ -14,7 +14,7 @@ Battery-powered MP3 player modeled on the Sony Walkman NW-S203F (grown body ~110
 - Storage — microSD (SPI2 + FatFs)
 - Display — SSD1306 OLED (I2C2)
 - Audio clock — 22.5792MHz MEMS oscillator, DSC6001 (shared MCU AUDIOCLK + MAX9850 MCLK)
-- Input — six switches (vol+, vol-, play, home, clockwise, counterclockwise) plus one three-way switch to mimic the original dial
+- Input — seven switches (vol+, vol-, play, home, clockwise, counterclockwise, mode); clockwise/counterclockwise are the dial actions, mode is a side button
 
 Part list: `docs/components.md`
 
@@ -45,6 +45,7 @@ The digital LDO is removed. The analog LDO has 0.3V nominal input/output headroo
 - Manufacturer datasheets checked: [MAX9850](https://www.analog.com/media/en/technical-documentation/data-sheets/max9850.pdf), [TPS7A20](https://www.ti.com/lit/ds/symlink/tps7a20.pdf), [TPS63050](https://www.ti.com/lit/ds/symlink/tps63050.pdf). MAX9850 AVDD/PVDD and DVDD support 1.8–3.6V; AVDD and PVDD must use the same voltage.
 
 ## Inputs
-- Six switches: vol+, vol-, play, home, clockwise, and counterclockwise. Clockwise/counterclockwise are the two switch actions for the rotary control.
-- One additional three-way switch mimics the original dial; position functions are not yet specified.
-- Input signals connect to MCU GPIO; exact switch parts, contact arrangement, and GPIO assignments remain unselected.
+- Seven switches: vol+, vol-, play, home, clockwise, counterclockwise, and mode.
+- Clockwise/counterclockwise are the two actions of the rotary dial (cam-actuated at the detents, with end stops); the dial has no push action.
+- Mode is a normal momentary side button, handled the same as play/home.
+- The previous three-way "dial" switch is dropped; input signals connect to MCU GPIO. Exact switch parts, contact arrangement, and GPIO assignments remain unselected.

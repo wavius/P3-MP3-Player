@@ -12,7 +12,7 @@
 | Storage | microSD socket (10-pos push-push w/ CD, SPI + FatFs) | ✓ |
 | Display | SSD1306B OLED (I2C) | ✓ |
 | Audio clock | DSC6001JI2B-022.5792T (22.5792MHz MEMS XO, CMOS, OE tied high) | ✓ |
-| Input | Six switches: vol+, vol-, play, home, clockwise, counterclockwise; plus one three-way switch (part numbers TBD) | ✗ |
+| Input | Seven switches: vol+, vol-, play, home, clockwise, counterclockwise, mode (side button); no three-way switch, no dial push (part numbers TBD) | ✗ |
 
 ✓ = chosen, ✗ = not yet selected
 
@@ -20,7 +20,7 @@
 
 - **MCU alternative**: STM32C562 is an alternative to the selected STM32C552RET6. Exact C562 ordering code, package/pin compatibility, and firmware configuration remain to be confirmed; it is not yet verified as a drop-in replacement. Manufacturer reference: [STM32C562 datasheet](https://www.st.com/resource/en/datasheet/stm32c562ce.pdf).
 
-- **Inputs**: six switches provide vol+, vol-, play, home, clockwise, and counterclockwise; the last two are the rotary control actions. An additional three-way switch mimics the original dial. Position functions, switch parts/contact arrangement, and MCU GPIO assignments are not yet specified.
+- **Inputs**: seven switches provide vol+, vol-, play, home, clockwise, counterclockwise, and mode. The clockwise/counterclockwise pair are the rotary control actions (cam-actuated at the dial detents, with end stops); the dial does not have a push action. Mode is a normal momentary side button, treated the same as play/home. The previous three-way "dial" switch is dropped. Switch parts/contact arrangement and MCU GPIO assignments are not yet specified.
 
 - **Audio clock / SYSCLK**: this MCU has no PLL (internal HSI is natively 144MHz; only dividers downstream). SYSCLK runs from HSI 144MHz. A 22.5792MHz MEMS oscillator (DSC6001, 512×44.1kHz) feeds both the MAX9850 MCLK input and the MCU SPI1/I2S kernel clock via AUDIOCLK for audio-class accuracy, native 44.1kHz family (48kHz family not exact). OE tied high = always enabled; the OE option can't power down the core, and the standby variant (DSC6011) is not stocked at this frequency. No LSE (no RTC).
 - **Power tree (two rails)**:

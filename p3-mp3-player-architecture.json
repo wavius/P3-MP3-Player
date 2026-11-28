@@ -16,7 +16,7 @@
     {"id": "headphones", "type": "external", "label": "Headphones", "sublabel": "3.5mm jack", "pos": [860, 276], "size": [120, 50]},
     {"id": "ldo", "type": "backend", "label": "TPS7A2030", "sublabel": "3.0V analog", "pos": [560, 168], "size": [120, 50]},
     {"id": "sd", "type": "database", "label": "microSD", "sublabel": "SPI2 + FatFs", "pos": [400, 384], "size": [120, 50]},
-    {"id": "input", "type": "external", "label": "Input", "sublabel": "6 switches + 3-way", "pos": [220, 384], "size": [120, 50]},
+    {"id": "input", "type": "external", "label": "Input", "sublabel": "7 switches (no 3-way)", "pos": [220, 384], "size": [120, 50]},
     {"id": "display", "type": "frontend", "label": "SSD1306", "sublabel": "OLED I2C2", "pos": [560, 384], "size": [120, 50]}
   ],
   "connections": [
@@ -35,6 +35,6 @@
   "cards": [
     {"dot": "cyan", "title": "Power", "items": ["USB-C → BQ24040 → LiPo → TPS63050", "3.3V digital: MCU, microSD, OLED VDD/VBAT, MAX9850 DVDD", "3.0V analog: TPS7A2030PDQNR → MAX9850 AVDD/PVDD", "I2C and charger-status pull-ups: 3.3V digital"]},
     {"dot": "emerald", "title": "Audio path", "items": ["microSD → SPI2 / FatFs → MCU / Helix", "I2S1 → MAX9850 DAC + headphone amp → 3.5mm jack", "22.5792MHz DSC6001 → MCU AUDIOCLK + MAX9850 MCLK"]},
-    {"dot": "rose", "title": "Control", "items": ["Buttons: vol+, vol-, play, home", "Rotary controls: clockwise, counterclockwise; three-way selector", "I2C1: MAX9850 volume/mute; I2C2: SSD1306 display", "GPIO: switches, display reset, card detect, charger status"]}
+    {"dot": "rose", "title": "Control", "items": ["Buttons: vol+, vol-, play, home, mode", "Rotary dial: clockwise, counterclockwise (end stops, no push)", "I2C1: MAX9850 volume/mute; I2C2: SSD1306 display", "GPIO: switches, display reset, card detect, charger status"]}
   ]
 }
